@@ -1,6 +1,6 @@
 package de.neuefische.Group4.OrderSystem.db;
 
-public class ArraylistProductDb implements IProductDb{
+public class ArraylistProductDb implements InterfaceProductDb{
     @Override
     public Product[] list() {
         return new Product[0];
