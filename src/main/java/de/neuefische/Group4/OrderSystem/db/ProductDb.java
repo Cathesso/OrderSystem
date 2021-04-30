@@ -1,8 +1,8 @@
 package de.neuefische.Group4.OrderSystem.db;
 
-public class ProductDb implements IProductDb{
+public class ArraylistProductDb implements IProductDb{
     @Override
-    public Product[] list(int zahl) {
+    public Product[] list() {
         return new Product[0];
     }
 
