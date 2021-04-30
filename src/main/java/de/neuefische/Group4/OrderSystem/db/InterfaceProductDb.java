@@ -1,6 +1,8 @@
 package de.neuefische.Group4.OrderSystem.db;
+import de.neuefische.Group4.OrderSystem.model.*;
 
 public interface InterfaceProductDb {
-    public Product[] list();
-    public Product get(String id); //
+    public String list();
+    public String[] getProductNames();
+
 }

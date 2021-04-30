@@ -1,5 +1,6 @@
 package de.neuefische.Group4.OrderSystem.model;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Order {
@@ -11,6 +12,14 @@ public class Order {
     public Order(String orderId, String[] products) {
         this.orderId = orderId;
         this.products = products;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId='" + orderId + '\'' +
+                ", products=" + Arrays.toString(products) +
+                '}'+'\n';
     }
 
     //Getter & Setter
@@ -43,4 +52,6 @@ public class Order {
     public int hashCode() {
         return Objects.hash(orderId);
     }
+
+
 }

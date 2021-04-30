@@ -47,4 +47,10 @@ public class Product {
         return Objects.hash(name);
     }
 
+    @Override
+    public String toString() {
+        return "Product: " +
+                "productId='" + productId + '\'' +
+                ", name='" + name + '\''+ '\n';
+    }
 }
